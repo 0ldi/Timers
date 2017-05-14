@@ -8,7 +8,7 @@ Flexibly customizable timers for tracking by triggers.
 ![](http://imagehost.spark-media.ru/iu/90/56/9056386D-A58B-DB21-4CFF-498771C99A22.png)
 
 # Changelog
-* Redesigned and added default timers (just for English need localizers)  
+* Redesigned and added default timers (just for English, need localizers for others)  
 * Slightly changed interface and design for small things
 Based on `Advanced Timers 3.43`
 
