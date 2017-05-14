@@ -248,7 +248,7 @@
 				this:ClearFocus();
 			</OnEnterPressed>
 		</Scripts>
-		<FontString inherits="ChatFontNormal" bytes="100"/>
+		<FontString inherits="ChatFontNormal" bytes="1000"/>
 	</EditBox>
 
 	<EditBox name="TimersEditBoxDropDownTemplate" enableMouse="true" autoFocus="false" virtual="true">
@@ -335,7 +335,7 @@
 	  
 	<Button name="TimersRowTemplate" virtual="true">
 		<Size>
-			<AbsDimension x="250" y="20"/>
+			<AbsDimension x="260" y="20"/>
 		</Size>
 		<Layers>
 			<Layer level="BACKGROUND">
@@ -465,7 +465,7 @@
 			</CheckButton>
 			<EditBox name="$parentEditBox1" inherits="TimersEditBoxTemplate" >
 				<Size>
-					<AbsDimension x="160" y="18"/>
+					<AbsDimension x="180" y="18"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="$parentMenuButton" relativePoint="TOPRIGHT"/>
@@ -536,7 +536,7 @@
 			</CheckButton>									
 			<EditBox name="$parentEditBox2" inherits="TimersEditBoxTemplate" >
 				<Size>
-					<AbsDimension x="100" y="18"/>
+					<AbsDimension x="80" y="18"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="$parentEditBox1" relativePoint="TOPRIGHT">
@@ -558,7 +558,7 @@
 			</EditBox>
 			<EditBox name="$parentEditBox3" inherits="TimersEditBoxTemplate" >
 				<Size>
-					<AbsDimension x="40" y="18"/>
+					<AbsDimension x="80" y="18"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="$parentEditBox2" relativePoint="TOPRIGHT"/>
@@ -572,7 +572,7 @@
 			</EditBox>
 			<EditBox name="$parentEditBox4" inherits="TimersEditBoxDropDownTemplate" >
 				<Size>
-					<AbsDimension x="300" y="18"/>
+					<AbsDimension x="290" y="18"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="$parentEditBox3" relativePoint="TOPRIGHT"/>
@@ -603,16 +603,23 @@
 
   <Button name="TimersBarTemplate" virtual="true" hidden="true" movable="true" enableMouse="true">
     <Size>
-      <AbsDimension x="200" y="12"/>
+      <AbsDimension x="350" y="12"/>
     </Size>
     <Layers>
       <Layer level="OVERLAY">
-        <FontString name="$parentText1" inherits="GameFontHighlight" text="bla1">
+        <FontString name="$parentText1" inherits="GameFontHighlight" align="RIGHT" justifyH="RIGHT" text="bla1">
 					<FontHeight>
 						<AbsValue val="10"/>
 					</FontHeight>
+					<Anchors>
+			  		<Anchor point="RIGHT">
+				  		<Offset>
+					  		<AbsDimension x="-105" y="0"/>
+				  		</Offset>
+			  		</Anchor>
+		    	</Anchors>
           <Size>
-            <AbsDimension x="145" y="10"/>
+            <AbsDimension x="250" y="10"/>
           </Size>
           <Anchors>
             <Anchor point="LEFT"/>
@@ -637,16 +644,16 @@
     <Frames>			
       <StatusBar name="$parentStatusBar">
         <Size>
-          <AbsDimension x="190" y="11"/>
+          <AbsDimension x="90" y="10"/>
         </Size>
         <Anchors>
-          <Anchor point="TOP">
+          <Anchor point="RIGHT">
             <Offset>
-              <AbsDimension x="0" y="-2"/>
+              <AbsDimension x="0" y="0"/>
             </Offset>
           </Anchor>
         </Anchors>
-        <BarTexture file="Interface\TargetingFrame\UI-StatusBar"/>
+        <BarTexture file="Interface\Tooltips\UI-Tooltip-Background.blp"/>
         <BarColor r="1.0" g="0.7" b="0.0"/>
         <Scripts>
           <OnLoad>
@@ -665,7 +672,10 @@
   		<Anchor point="CENTER"/>
   	</Anchors>
 		<Frames>
-  		<Button name="$parentMenuButton" inherits="TextButtonTemplate" text="M">
+  		<Button name="$parentMenuButton" inherits="TextButtonTemplate" text=" ">
+		  	<Size>
+			<AbsDimension x="18" y="18"/>
+			</Size>
 				<Anchors>
 					<Anchor point="CENTER"/>
 				</Anchors>
@@ -682,18 +692,18 @@
 			</Button>
 			<ScrollFrame name="$parentScrollFrame" inherits="FauxScrollFrameTemplate">
 				<Size>
-					<AbsDimension x="195" y="120"/>
+					<AbsDimension x="240" y="120"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="LEFT">
 						<Offset>
-							<AbsDimension x="-20" y="0"/>
+							<AbsDimension x="0" y="8"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
 				<Scripts>
 					<OnVerticalScroll>
-						FauxScrollFrame_OnVerticalScroll(20, TimersMainFrame_OnScroll)
+						FauxScrollFrame_OnVerticalScroll(40, TimersMainFrame_OnScroll)
 					</OnVerticalScroll>
 				</Scripts>
 			</ScrollFrame>
@@ -883,7 +893,7 @@
 					</OnClick>
 				</Scripts>
 				<Size>
-					<AbsDimension x="100" y="16"/>
+					<AbsDimension x="80" y="16"/>
 				</Size>
 			</Button>
 			<Button name="$parentSortButton3" inherits="SortButtonTemplate" text="TIMERS_LOC_PREWARN">
@@ -896,7 +906,7 @@
 					</OnClick>
 				</Scripts>
 				<Size>
-					<AbsDimension x="40" y="16"/>
+					<AbsDimension x="80" y="16"/>
 				</Size>
 			</Button>			
 			<Button name="$parentSortButton4" inherits="SortButtonTemplate" text="TIMERS_LOC_TEXT">
@@ -909,7 +919,7 @@
 					</OnClick>
 				</Scripts>
 				<Size>
-					<AbsDimension x="300" y="16"/>
+					<AbsDimension x="280" y="16"/>
 				</Size>
 			</Button>
 			<Button name="$parentSortButton5" inherits="SortButtonTemplate" text="TIMERS_LOC_CNT">
@@ -1407,7 +1417,7 @@
 								</Size>
 								<Layers>
 									<Layer level="BACKGROUND">
-										<FontString name="TimersMainFrameHelpFrameText" inherits="GameFontHighlight" wraponspaces="true" alignment="LEFT" justifyH="LEFT">
+										<FontString name="TimersMainFrameHelpFrameText" inherits="GameFontHighlight" wraponspaces="true" align="LEFT" justifyH="LEFT">
 											<Anchors>
 												<Anchor point="TOPLEFT">
 													<Offset>
@@ -1557,7 +1567,7 @@
 					</Anchor>
 				</Anchors>
 				<Size>
-					<AbsDimension x="150" y="16"/>
+					<AbsDimension x="350" y="16"/>
 				</Size>
 			</FontString>
 		</Layer>
@@ -1653,7 +1663,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
-							<AbsDimension x="210" y="-30"/>
+							<AbsDimension x="210" y="-250"/>
 						</Offset>
 					</Anchor>
 				</Anchors>

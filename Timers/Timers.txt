@@ -113,7 +113,7 @@
 			This will reload the default values of all predefined triggers.
 			
 	3.3 The groups
-		A group is written as --- <name> --- in blue text. It has the follwing options:
+		A group is written as <name> in blue text. It has the follwing options:
 		
 		3.3.1 by playtime
 			When checked, the timer will pause, when leaving the game. It will resume when reentering.
