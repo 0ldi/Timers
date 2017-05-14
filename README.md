@@ -16,7 +16,7 @@ Based on `Advanced Timers 3.43`
 Put `Timers` folder to `World of Warcraft\Interface\AddOns`
 
 # Known bugs
-* On the triggers tab (and their settings) is badly displayed inside the chatbox. But it works fine, just display problem.
+* On the triggers tab (and their settings), text is badly displayed inside the chatbox. But it works fine, just display problem.
 * `/showtime` command does not work for RENDcd
 
 # Detailed description
