@@ -23,3 +23,4 @@ Put `Timers` folder to `World of Warcraft\Interface\AddOns`
 * The addon is configured to work "from the box", (no announce in raidchat and guildchat), so it can be easily changed in a few clicks if you want.
 * Timers can be not accurate, so report me bugs.
 * Also, I'm looking for information about all rare elites respawn times. (Yes, I know that many of them spreading of the minimum and maximum time, I need both.)
+* The rest of the description can be found in the file: `Timers.txt`
