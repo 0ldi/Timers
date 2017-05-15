@@ -17,7 +17,7 @@ Put `Timers` folder to `World of Warcraft\Interface\AddOns`
 
 # Known bugs
 * On the triggers tab (and their settings), text is badly displayed inside the chatbox. But it works fine, just display problem.
-* `/showtime` command does not work for RENDcd
+* `/showtime` command can be not 100% correct
 
 # Detailed description
 * The addon is configured to work "from the box", (no announce in raidchat and guildchat), so it can be easily changed in a few clicks if you want.
