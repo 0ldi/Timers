@@ -977,7 +977,7 @@ triggerdata = {
 },{
 		channel = TIMERS_LOC_ONSCREEN,
 		group = TIMERS_LOC_PRIEST,
-		inactive = false,
+		inactive = true,
 		message = "",
 		mode = TIMERS_LOC_DELETE,
 		name = "FW",
