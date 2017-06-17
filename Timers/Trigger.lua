@@ -285,7 +285,7 @@ triggerdata = {
 		text = "Your pet begins eating",
 		threshold = 1,
 		time = 20,
-		type = TIMERS_LOC_MULTIPLE,
+		type = TIMERS_LOC_RESET,
 		warnchannel = TIMERS_LOC_ONSCREEN,
 		warnmessage = "!trigger 10s",
 },{
