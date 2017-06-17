@@ -366,13 +366,13 @@
 	The following slashcommands are availible. They are invoked with /ati command. A.E.: "/ati show".
 	Parameters in [] are optional.
 	
-		- "add name time [channel] [msg] [warnchannel] [warnmessage] [warntime]" 			
+		- "/ati add name time [channel] [msg] [warnchannel] [warnmessage] [warntime]" 			
 																			This will add a new timer	
-		- "addi name [time]"							This will add a new incremental timer
-		- "show" 													This will show the Userinterface, when hidden.	
-		- "reset"													This will reset all configuration and positions.
-		- "invoke name"										This will invoke the trigger "name".
-		- "debug"													This will show the internal name of a skill or spell, when an 
+		- "/ati addi name [time]"							This will add a new incremental timer
+		- "/ati show" 													This will show the Userinterface, when hidden.	
+		- "/ati reset"													This will reset all configuration and positions.
+		- "/ati invoke name"										This will invoke the trigger "name".
+		- "/ati debug"													This will show the internal name of a skill or spell, when an 
 																			action button is pressed.
 		
 	5.3 Whispercommands
