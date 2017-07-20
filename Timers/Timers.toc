@@ -2,5 +2,5 @@
 ## Title: Timers
 ## Version: 3.42
 ## Notes: a trigger based timers and warning system (MC Respawns)
-## SavedVariables: configdata, timerdata, triggerdata, groupdata, TimerscurrentTime, TimersRCCounter
+## SavedVariablesPerCharacter: configdata, timerdata, triggerdata, groupdata, TimerscurrentTime, TimersRCCounter
 Timers.xml
